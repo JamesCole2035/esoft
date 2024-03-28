@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to top, lightgreen 410px, lightblue 0%);
+}
+.home {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: calc((100% - 510px)/2);
+    width: 500px;
+    height: 250px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-color: brown;
+}
+.roof {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: calc((100% - 545px)/2);
+    width: 0; 
+    height: 0;
+    border-left: 270px solid transparent;
+    border-right: 270px solid transparent;
+    border-bottom: 200px solid #24375B;
+}
+.pipe {
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 160px;
+    width: 0; 
+    height: 0; 
+    border-width: 70px 50px 20px 0px;
+    border-style: solid;
+    border-color: #E95557 #E95557 transparent;
+}
+.window {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 100px; 
+    height: 100px;
+    background: white;
+    border: 8px solid coral;
+    border-radius: 50%;
+    z-index: 3;
+}
+.door {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 270px;
+    height: 160px;
+    width: 80px;
+    background: indianred;
+    border: 10px solid coral;
+    z-index: 3;
+}
+.door::after {
+    content: "";
+    position: absolute; 
+    left: 10px; 
+    top: 80px;
+    height: 0; 
+    width: 0;
+    border-left: 20px solid black;
+    border-top: 5px solid black;
+}
